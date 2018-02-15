@@ -13,13 +13,13 @@ defmodule ElixirSamlTest do
     saml_response
   end
 
-  # test "decode" do
-  #   {:ok, decoded_response} = ElixirSaml.decode(saml_encoded_response())
-  #   assert expected_decoded_response() == decoded_response
-  # end
-
-  test "parse_decoded_response" do 
-    list = ElixirSaml.parse_decoded_response(expected_decoded_response())
-    assert 1 == list
+  test "decode" do
+    {:ok, decoded_response} = ElixirSaml.decode(saml_encoded_response())
+    assert expected_decoded_response() == decoded_response
   end
+
+  # test "parse_decoded_response" do 
+  #   list = ElixirSaml.parse_decoded_response(expected_decoded_response())
+  #   assert 1 == list
+  # end
 end
